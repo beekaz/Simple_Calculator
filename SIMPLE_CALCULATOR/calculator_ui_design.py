@@ -49,25 +49,8 @@ def handle_backspace():
         expression = expression[:-1]
         equation.set(expression)
         
-'''        
-def keypress(event):
-    key = event.char
-    if key.isdigit():
-        digit = int(key)
-        press(digit)
-    elif key == "+":
-        press("+")
-    elif key == "-":
-        press("-")
-    elif key == "*":
-        press("*")
-    elif key == "/":
-        press("/")
-    elif key == "=":
-        equalpress()
-    elif key == "handle_backspace":
-        handle_backspace()
-'''        
+
+      
                                
 def clear():
                 global expression 
@@ -77,7 +60,6 @@ def clear():
                 
 expression_field = Entry(frame, textvariable=equation)
 expression_field.grid(columnspan = 4, ipadx = 100)
-#expression_field.bind('<KeyPress>', keypress)  # Bind the result.keypress event to the Entry widget
 button1 = Button(frame , text = '1', fg = 'black', bg = 'pink', command = lambda: press(1), height =1, width=7)
 button1.grid(row = 2, column = 0)
 button2 = Button(frame, text = '2', fg = 'black', bg = 'white', command = lambda: press(2), height= 1, width=7)
