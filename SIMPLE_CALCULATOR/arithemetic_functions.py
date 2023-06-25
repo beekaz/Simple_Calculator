@@ -40,4 +40,3 @@ else:
 
 # Print the result
 print("Result:", result)
-    
