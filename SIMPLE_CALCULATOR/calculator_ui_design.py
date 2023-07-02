@@ -1,4 +1,4 @@
-from tkinter import  Tk, Frame, Menu, Button, Entry, StringVar,
+from tkinter import  Tk, Frame, Menu, Button, Entry, StringVar
 expression = ""
 #from arithemetic_functions import add, subtract, multiply, divide
 root= Tk()
@@ -15,8 +15,8 @@ equation.set("")
 
 def Standard():
     root.resizable(width=False, height=False)
-    root.geometry("480x568+0+0")
- 
+    root.geometry("480x568")
+    
 menubar = Menu(frame)
  
 # ManuBar 1 :
@@ -30,6 +30,8 @@ def press(num):
         expression = expression_field.get()
         expression += str(num)
         equation.set(expression)
+        expression_field.delete(0, 'end')
+        expression_field.insert('end', expression)
         
         
 def equalpress():
@@ -56,10 +58,11 @@ def clear():
                 global expression 
                 expression = ""
                 equation.set("")
-                
+
                 
 expression_field = Entry(frame, textvariable=equation)
 expression_field.grid(columnspan = 4, ipadx = 100)
+
 button1 = Button(frame , text = '1', fg = 'black', bg = 'pink', command = lambda: press(1), height =1, width=7)
 button1.grid(row = 2, column = 0)
 button2 = Button(frame, text = '2', fg = 'black', bg = 'white', command = lambda: press(2), height= 1, width=7)
