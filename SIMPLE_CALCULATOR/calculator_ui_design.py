@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import  Tk, Frame, Menu, Button, Entry, StringVar,
 expression = ""
 #from arithemetic_functions import add, subtract, multiply, divide
 root= Tk()
