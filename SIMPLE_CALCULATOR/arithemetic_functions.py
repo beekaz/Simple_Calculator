@@ -1,14 +1,19 @@
+<<<<<<< HEAD
 from main_function import  Tk, Label
 def add(a, b):
+=======
+from main_function import *
+def add(a: float, b: float) -> float:
+>>>>>>> a37f744 (Annotate functions in arithemetic_functions module)
     return a + b
 
-def subtract(a, b):
-    return (a - b)
+def subtract(a: float, b: float) -> float:
+    return a - b
 
-def multiply(a, b):
+def multiply(a: float, b: float) -> float:
     return a * b
 
-def divide(a, b):
+def divide(a: float, b: float) -> float:
     if b != 0:
         result = num1 / num2
         label_result = Tk.Label(frame, text="Result: {result}")
