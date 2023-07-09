@@ -1,4 +1,4 @@
-from main_function import *
+from main_function import  Tk, Label
 def add(a, b):
     return a + b
 
