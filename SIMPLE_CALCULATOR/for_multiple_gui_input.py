@@ -1,5 +1,4 @@
-from tkinter import *
-from calculator_ui_design import *
+from tkinter import Tk, Frame, Label, IntVar, Radiobutton
 
 # Function to create the GUI components
 def create_gui(frame, calculate_numbers):
@@ -16,7 +15,7 @@ def create_gui(frame, calculate_numbers):
     
     choice = Tk.IntVar()
     
-    # Create radio buttons for selecting the operation
+    #radio buttons for selecting the operation
     radio_add = Tk.Radiobutton(frame, text="Addition", variable=choice, value=1)
     radio_add.pack()
     
@@ -34,6 +33,3 @@ def create_gui(frame, calculate_numbers):
     
     label_result = Tk.Label(frame, text="Result: ")
     label_result.pack()
-    
-    # Pass necessary components to the calculate_numbers function
- #   calculate_numbers._globals_.update(locals())
