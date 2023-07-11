@@ -7,3 +7,8 @@ such as addition, subtraction, multiplication, and division.
 - Subtraction: Subtract one number from another.
 - Multiplication: Multiply two numbers.
 - Division: Divide one number by another.
+
+### Running the calculator
+```commandline
+python simple_calculator/main.py
+```
